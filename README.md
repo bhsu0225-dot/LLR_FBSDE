@@ -151,22 +151,6 @@ Errors are computed against the prescribed exact solutions, not against a finer 
 - **Scope.** These are pointwise errors at the initial space-time point, not norms over the domain. 
 - **Reproducibility.** The reported values depend on the random stream and on the worker scheduling of `parfor`, so results can vary slightly between runs unless the seed is fixed.
 
-## Output
 
-The programs write their results to the Command Window and do not create output folders or save figures.
-
-| Program | Console output | Saved files |
-| --- | --- | --- |
-| `high_dim_allen_cahn_solver.m` | Result block with estimated and exact values, absolute and relative errors, elapsed time | None |
-| `high_dim_burgers_solver.m` | Result block with estimated and exact values, absolute and relative errors, elapsed time | None |
-| `high_dim_hamilton_jacobi_solver.m` | Estimated and exact values, absolute error, relative error, elapsed time | None |
-
-To keep a record of a run, wrap the call in a `diary` session, or add a `save` statement after the solver returns. For example, the Allen--Cahn result can be captured with
-
-```matlab
-diary('allen_cahn_d100.log')
-high_dim_allen_cahn_solver
-diary off
-```
 
 

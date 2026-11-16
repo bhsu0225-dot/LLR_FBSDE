@@ -85,14 +85,14 @@ so that $q = 4Dd\,u/(1+4Dt)$.
 Download the repository, set the MATLAB current folder to the directory containing the three `.m` files, edit the parameter block near the beginning of the desired file, and run it by name:
 
 ```matlab
-% Allen--Cahn-type equation in 100 dimensions
-high_dim_allen_cahn_solver
+% Allen--Cahn-type equation
+AllenCahn_Case2
 
-% Burgers-type equation in 10 dimensions
-high_dim_burgers_solver
+% Burgers-type equation
+Burgers_main
 
-% Hamilton--Jacobi equation in 10 dimensions
-high_dim_hamilton_jacobi_solver
+% Hamilton--Jacobi equation
+Hamiltonjacobi_main
 ```
 
 No other experiment needs to be run first. For an initial execution check, reduce the particle count `M` or the number of time steps `N`. Use the defaults when generating final results. Each run prints a progress percentage and elapsed time, followed by a result block with the estimated and exact values and the errors.

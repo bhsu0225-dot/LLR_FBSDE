@@ -37,7 +37,7 @@ $$u_t - \nu \Delta u + g(u) = 0, \qquad g(u) = \frac{a}{2}\big[(1+u)\log(1+u) + 
 
 with $a,b>0$. The driver supplies the matching source term for the manufactured solution
 
-$$u(t,x) = e^{\cos t}\,\cos\Big(\prod_{j=1}^{d} x_j\Big)\,e^{-\lVert x\rVert^2}.$$
+$$u(t,x) = e^{\cos t -\lVert x\rVert^2}\cos\Big(\prod_{j=1}^{d} x_j\Big).$$
 
 The program reports the estimate of $u(0,x_0)$, the exact value, the absolute and relative errors, and the elapsed time.
 

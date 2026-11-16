@@ -33,7 +33,7 @@ Each program can be run independently. Helper functions with the same names are 
 
 **`high_dim_allen_cahn_solver.m`** solves
 
-$$u_t - \nu \Delta u + g(u) = 0, \qquad g(u) = \frac{a}{2}\big[(1+u)\log(1+u) + (1-u)\log(1-u)\big] - \frac{b}{2}u^2,$$
+$$u_t - \nu \Delta u + g(u) = 0, \qquad g(u) = \frac{a}{2}\big[(1+u)\log(1+u) + (1-u)\log(1-u)\big] - \frac{b}{2}u,$$
 
 with $a,b>0$. The driver supplies the matching source term for the manufactured solution
 
